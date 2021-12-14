@@ -1,0 +1,118 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: texttype;
+    src: url(./font/Montserrat/Montserrat-Thin.ttf)
+}
+
+body {
+    background-color: #F4F0C3;
+}
+
+/* Herunder styles logo i navbar */
+.logo {
+    width: 150px;
+    display: block;
+    margin: auto;
+    }
+
+/* Herunder styles alle overskrifter med borders på landing page */
+.introbox
+ {
+    background-color: #F4F0C3;
+    padding: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: #545454;
+    margin: auto;
+    max-width: 300px;
+    margin-bottom: 27px;
+    
+}
+
+/* Herunder styles alle section på landing page */
+h2, h1, .introbox p {
+    text-align: center;
+    font-family: texttype;
+    text-transform: uppercase;
+}
+
+/* Herunder laves frontcover til en box og styles */
+#frontcover {
+    width: 230px;
+    height: 345px;
+    margin: auto;
+    display: block;
+}
+
+/* Styling af lyserød section med kategorier */
+.kategoribox {
+    background-color: #F0C9D4;
+}
+
+#fotografi, .video {
+    display: flex;
+    float: left;
+}
+
+#webdesign, .grafiskdesign {
+    display: flex;
+    float: left;
+}
+
+#some, .kontakt {
+    display: flex;
+    float: left;
+}
+
+.fotografisection {
+    background-color: #C3DCBA;
+    width: 318px;
+    height: 729px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 17.9px;
+}
+
+.fotografioverskrift {
+    display: block;
+    margin: auto;
+    margin-bottom: 21px;
+}
+.fotograficollage {
+    width: 230px;
+    height: 345px;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+
+    /* Herunder styles logo i navbar */
+    .logo {
+    width: 50px;
+    display: block;
+    margin: auto;
+    }
+
+    .multimediedesigner {
+    max-width: 680px;
+    }
+
+
+
+}
