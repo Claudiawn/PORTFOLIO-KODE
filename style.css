@@ -4,6 +4,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: texttype;
     src: url(./font/Montserrat/Montserrat-Thin.ttf)
@@ -142,17 +146,8 @@ h2, h1, .introbox p {
     margin-right: 10%
 }
 
-/*Styling af alle overskrifter (fotos) */
-.fotografioverskrift, .videooverskrift, .webdesignoverskrift, .grafiskdesignoverskrift,
-.someoverskrift
-{
-    display: block; /*Rykker overskriften ind i midten */
-    margin: auto;
-    margin-bottom: 21px;
-}
-
 /*Styling af frontbilleder i alle sections */
-.fotograficollage, .videopic, .webdesignpic, .grafiskdesigncollage, .someindhold {
+.fotograficollage, .webdesignpic, .grafiskdesigncollage, .someindhold {
     width: 230px;
     height: 345px;
     margin: auto;
@@ -274,27 +269,81 @@ h2, h1, .introbox p {
         width: 60%;
     }
 
-    /*Positionering af billede på fotografi side*/
-    .fotografisection img{
-        position: relative;
-        top: 100px;
-        right: -300px;
-        transform: scale(1.3);
-    }
-    /*Positionering af overskrift i fotografi kategori*/
-    .green-heading {
-        position: relative;
-        top: 110px;
-        left: -150px;
+    /*Forstørrelse af tekst i fotoparagraph*/
+    .fotoparagraph {
+        font-size: 20px;
     }
 
-    /*Positionering af fotografisection text*/
-    .fotografisection-text {
-        width: 640px;
-        position: relative;
-        top: -210px;
-        left: 40px;
+    /*Styling af videosection, da den er længere*/
+    .videosection {
+        width: 60%;
+        height: 80%;
+        padding-bottom: 50px;
     }
+
+    /*Forstørrelse af tekst i videoparagraph*/
+    .videoparagraph {
+        font-size: 20px;
+    }
+
+    /*Forstørrelse af webdesignsection*/
+    .webdesignsection {
+        width: 60%;
+        height: 80%;
+        padding-bottom: 50px;
+    }
+
+    /*Forstørrelse af tekst i webdesignparagraph*/
+    .webdesignparagraph {
+        font-size: 20px;
+    }
+
+    /*Forstørrelse af grafiskdesignsection*/
+    .grafiskdesignsection {
+        width: 60%;
+        height: 80%; 
+        padding-bottom: 50px;
+    }
+
+    /*Forstørrelse af tekst i grafiskdesignparagraph*/
+    .grafiskdesignparagraph {
+        font-size: 20px;
+    }
+
+    /*Forstørrelse af somesection*/
+    .somesection {
+        width: 60%;
+        height: 80%; 
+        padding-bottom: 50px;
+    }
+
+    /*Forstørrelse af tekst i someparagraph*/
+    .someparagraph {
+        font-size: 20px;
+    }
+
+    .kontaktsection {
+        width: 60%;
+        height: 80%; 
+        padding-bottom: 50px; 
+    }
+
+    .kontaktparagraph {
+        font-size: 20px;
+        line-height: 2;
+        margin-bottom: 50px;
+    }
+
+    .kontakttextparagraph {
+        font-size: 20px;
+    }
+
+    .kontaktpicture {
+        width: 600px;
+        height: auto;
+        margin-top: -100px;
+    }
+
 
 
 }
