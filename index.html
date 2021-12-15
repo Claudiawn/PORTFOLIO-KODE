@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="dk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,62 +8,243 @@
     <title>CLAUDIA WRIEDT NEBLE</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<nav class="navbar">
-    <img class="logo" src="img/Logo.jpg" alt="logo">
-</nav>
+    <!--Styling af navbar (logo)-->
+    <nav class="navbar">
+        <img class="logo" src="img/Logo.jpg" alt="logo">
+    </nav>
 
-<section class="introbox">
-    <h2>Multimediedesigner</h1>
-</section>
+    <!--Første box - mulitimediedesigner-->
+    <section class="introbox box1">
+        <h1>Multimediedesigner</h1>
+    </section>
 
-<section class="introbox">
-    <h1>Claudia Wriedt Neble</h1>
-</section>
+    <!--Anden box - Navn-->
+    <section class="introbox box2">
+        <h1>Claudia Wriedt Neble</h1>
+    </section>
 
-<section class="introbox">
-    <p>Fotografi <br> 
-    Video <br>
-    Grafisk design <br> 
-    Webdesign <br>
-    </p>
-</section>
+    <!--Tredje box - kategorier-->
+    <section class="introbox box3">
+        <p>Fotografi <br>
+            Video <br>
+            Grafisk design <br>
+            Webdesign <br>
+        </p>
+    </section>
 
-<img src="img/frontpagepic.jpg" alt="frontcover" id="frontcover">
+    <!--Fotocollage på forsiden-->
+    <img class="first-collage" src="img/frontpagepic.jpg" alt="frontcover" id="frontcover">
 
-<section class="kategoribox">
+    <!--Lyserød section med kategoribokse-->
+    <section class="kategoribox">
 
-    <div id="fotografi">
-        <img src="img/Group 34.png" alt="fotografi">
-    </div>
+        <div id="content">
+            <img src="img/fotografi.jpg" alt="fotografi">
+            <a href="#to-foto" class="content-btn">FOTOGRAFI</a>
+        </div>
 
-    <div id="video"> 
-        <img src="img/Group 33.png" alt="video">
-    </div>
+        <div id="content">
+            <img src="img/video.jpg" alt="video">
+            <a href="#to-video" class="content-btn">VIDEO</a>
+        </div>
 
-    <div id="webdesign">
-        <img src="img/Group 35.png" alt="webdesign">
-    </div>
+        <div id="content">
+            <img src="img/webdesign.jpg" alt="webdesign">
+            <a href="#to-webdesign" class="content-btn">WEBDESIGN</a>
+        </div>
 
-    <div id="grafiskdesign">
-        <img src="img/Group 36.png" alt="grafiskdesign">
-    </div>
+        <div id="content">
+            <img src="img/grafiskdesign.jpg" alt="grafiskdesign">
+            <a href="#to-grafiskdesign" class="content-btn">GRAFISK DESIGN</a>
+        </div>
 
-    <div id="some">
-        <img src="img/Group 38.png" alt="some">
-    </div>
+        <div id="content">
+            <img src="img/some.jpg" alt="some">
+            <a href="#to-some" class="content-btn">SOME</a>
+        </div>
 
-    <div id="kontakt">
-        <img src="img/Group 37.png" alt="kontakt">
-    </div>
+        <div id="content">
+            <img src="img/kontakt.jpg" alt="kontakt">
+            <a href="#to-kontakt" class="content-btn">KONTAKT</a>
+        </div>
 
-</section>
+    </section>
 
+    <!--Grøn section med fotografi-->
+    <section id="to-foto" class="fotografisection">
+        <div class="general-heading-container green-heading">
+            <h2 class="general-heading">
+                FOTOGRAFI
+            </h2>
+        </div>
+        <img class="fotograficollage" src="img/fotograficollage.png" alt="fotograficollage">
 
-<section class="fotografisection">
-    <img class="fotografioverskrift" src="img/Group 40.png" alt="fotografioverskrift"> 
-    <img class="fotograficollage" src="img/fotograficollage.png" alt="fotograficollage">
-</section>
+        <div class="fotografisection-text">
+            <p class="fotoparagraph">Min interesse for fotografi startede i en tidlig
+                alder. Jeg mener der er noget meget smukt
+                ved at indkapsle en stemning eller en følelse
+                gennem fotografi. Et billede siger mere end
+                tusind ord - dette ordsprog kan jeg genkende
+                mig selv i.
+
+                Jeg er inspireret af det umiddelbare øjeblik
+                og holder af at fotografere mennesker.
+
+                Derudover har jeg en stor interesse for
+                produktfotografi og processen at få et
+                produkt til at fremstå bedst muligt.
+            </p>
+        </div>
+    </section>
+
+    <!--Lilla section med video-->
+    <section id="to-video" class="videosection">
+        <div class="general-heading-container">
+            <h2 class="general-heading">
+                VIDEO
+            </h2>
+        </div>
+        <div>
+            <!--Embed af youtube videoer: https://www.youtube.com/watch?v=9YffrCViTVk-->
+            <iframe class="vinhuset" width="560" height="315" src="https://www.youtube.com/embed/cunAEdBx_Ks"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="howtoschool" width="560" height="315" src="https://www.youtube.com/embed/4p9ottowT7A"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="havafiestaorange" width="560" height="315" src="https://www.youtube.com/embed/e3C7PQCyjhk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="baileys" width="560" height="315" src="https://www.youtube.com/embed/32x6FPpch_U"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div>
+            <p class="videoparagraph">
+                I forlængelse af min interesse for fotografi
+                begyndte jeg at udvide min horisont og
+                begyndte at udarbejde små videoer.
+
+                Jeg har primært haft fokus på markedsføring
+                af produkter gennem video og har derfor
+                brugt meget tid på at udarbejde skudlister
+                tilpasset det specifikke produkt med
+                udgangspunkt i ingredienserne.
+
+                Derudover holder jeg af - i tråd med fotografi
+                - at indkapsle øjeblikke og store øjeblikke i
+                form af video.
+            </p>
+        </div>
+    </section>
+
+    <!--Lyserød section med webdesign-->
+    <section id="to-webdesign" class="webdesignsection">
+        <div class="general-heading-container">
+            <h2 class="general-heading">
+                WEBDESIGN
+            </h2>
+        </div>
+        <img class="webdesignpic" src="img/webdesignportfolio.png" alt="webdesign">
+
+        <div>
+            <p class="webdesignparagraph">
+                På mit nuværende studie arbejder vi i
+                høj grad med webdesign. Vi bliver
+                undervist i både kode, farvevalg,
+                designvalg og meget mere. Denne viden
+                bruger jeg i alle mine projekter og har i den
+                forbindelse udarbejdet design til forskellige
+                websites I Adobe XD.
+                Du kan her se et udpluk af mine webdesign
+                på denne side.
+            </p>
+        </div>
+    </section>
+
+    <!--Grøn sektion med grafisk design-->
+    <section id="to-grafiskdesign" class="grafiskdesignsection">
+        <div class="general-heading-container">
+            <h2 class="general-heading">
+                GRAFISK DESIGN
+            </h2>
+        </div>        
+        <img class="grafiskdesigncollage" src="img/grafiskdesigncollage.png" alt="grafiskdesigncollage">
+
+        <div>
+            <p class="grafiskdesignparagraph">På mit nuværende studie arbejder vi i
+                høj grad med webdesign. Vi bliver
+                undervist i både kode, farvevalg,
+                designvalg og meget mere. Denne viden
+                bruger jeg i alle mine projekter og har i den
+                forbindelse udarbejdet forskellige websites.
+
+                Jeg har samtidig brugt mange arbejdstimer i
+                Photoshop og har tilegnet mig evner især inden
+                for foto manipulation. Jeg har udover dette
+                arbejdet i Lightroom Classic, InDesign, Illustrator
+                og Canva.
+            </p>
+        </div>
+    </section>
+
+    <!--Lilla sektion med SOME-->
+    <section id="to-some" class="somesection">
+        <div class="general-heading-container">
+            <h2 class="general-heading">
+                SOME
+            </h2>
+        </div>
+        <img class="someindhold" src="img/SOMEpic.png" alt="someindhold">
+        <div>
+            <p class="someparagraph">I en verden hvor sociale medier er vores
+                primære måde at brande virksomheder på,
+                finder jeg det interessant at blive klogere
+                på branding herigennem. Jeg forsøgerat holde øje med
+                trends, tendenser og nyheder.
+
+                I forbindelse med dette har jeg været en del af
+                et team der har haft til opgave at udarbejde
+                Instagram opslag til en App der har til formål
+                at hjælpe unge med deres økonomi.
+            </p>
+        </div>
+    </section>
+
+    <section id="to-kontakt" class="kontaktsection">
+        <div class="general-heading-container">
+            <h2 class="general-heading">
+                KONTAKT
+            </h2>
+        </div>
+        <div>
+            <p class="kontaktparagraph">
+                Kontakt: <br>
+                Mobil: +45 24 98 76 22 <br>
+                Mail: claudianeble@hotmail.com <br>
+                LinkedIn: https://www.linkedin.com/in/claudia-neble-77bb60165/
+            </p>
+        </div>
+
+        <div>
+            <p class="kontakttextparagraph">
+                Jeg håber at min portfolio har vakt jeres
+                interesse.
+
+                I er mere end velkomne til at kontakte
+                mig ved eventuelle spørgsmål :-)
+            </p>
+        </div>
+        <img class="kontaktpicture" src="img/KONTAKTPICTURE.jpg" alt="kontaktpicture">
+    </section>
 
 </body>
+
 </html>

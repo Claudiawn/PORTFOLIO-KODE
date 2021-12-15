@@ -1,6 +1,7 @@
 *{ 
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 @font-face {
@@ -33,7 +34,20 @@ body {
     
 }
 
-/* Herunder styles alle section på landing page */
+/*Overskrift ligger i container, så overskrift tilpasser sig*/
+.general-heading-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*Styling af alle katogori overskrifter m. blå baggrund*/
+.general-heading {
+    background-color: #C6E2EA;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+/* Herunder styles alle sections på landing page */
 h2, h1, .introbox p {
     text-align: center;
     font-family: texttype;
@@ -51,53 +65,159 @@ h2, h1, .introbox p {
 /* Styling af lyserød section med kategorier */
 .kategoribox {
     background-color: #F0C9D4;
-}
-
-#fotografi, .video {
+    width: 100%;
     display: flex;
-    float: left;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#webdesign, .grafiskdesign {
+/*Flex wrap på kategorier - sidder ved siden af hinanden*/
+.kategoribox #fotografi {
+    width: 100%;
+    margin: 10px;
+    height: 100%;
     display: flex;
-    float: left;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
-#some, .kontakt {
+/*Link/knap ligger under billeder*/
+#content {
     display: flex;
-    float: left;
+    flex-direction: column;
 }
 
-.fotografisection {
+/*Knapper i kategoribox*/
+.content-btn {
+    margin: 0 auto;
+    background-color: #C6E2EA;
+    width: 130px;
+    font-family: texttype;
+}
+
+/*Styling af alle kategori billeder */
+.kategoribox div img {
+    width: 154px;
+    margin: 10px;
+    height: 110px;
+    position: relative;
+}
+
+/* Styling af alle farver og placering på sections */
+.fotografisection, .webdesignsection, .grafiskdesignsection, .somesection,
+ .kontaktsection {
     background-color: #C3DCBA;
     width: 318px;
-    height: 729px;
+    height: 650px;
     display: block;
     margin: auto;
     margin-top: 40px;
     padding-top: 17.9px;
 }
 
-.fotografioverskrift {
+/*Justering af højde på grafisk design box*/
+.grafiskdesignsection {
+    height: 750px;
+}
+
+/*Seperat styling af videosection, da den skal være længere end de andre */
+.videosection {
+    background-color: #C3DCBA;
+    width: 318px;
+    height: 1100px;
     display: block;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 17.9px; 
+}
+
+/*Styling af alle videoer i video section */
+.vinhuset, .howtoschool, .havafiestaorange, .baileys {
+    position: center;
+    width: 80%;
+    height: 30%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+/*Styling af alle overskrifter (fotos) */
+.fotografioverskrift, .videooverskrift, .webdesignoverskrift, .grafiskdesignoverskrift,
+.someoverskrift
+{
+    display: block; /*Rykker overskriften ind i midten */
     margin: auto;
     margin-bottom: 21px;
 }
-.fotograficollage {
+
+/*Styling af frontbilleder i alle sections */
+.fotograficollage, .videopic, .webdesignpic, .grafiskdesigncollage, .someindhold {
     width: 230px;
     height: 345px;
     margin: auto;
     display: block;
 }
 
+/*Styling af alle paragraphs - alle får samme font, str. osv */
+.fotoparagraph, .videoparagraph, .webdesignparagraph, .grafiskdesignparagraph,
+.someparagraph, .kontakttextparagraph { 
+    background-color: #C6E2EA;
+    font-family: texttype;
+    font-size: 12px;
+    margin: 19px;
+    padding: 19px;
+}
 
+/*Videosection stylet med egen farve */
+.videosection {
+    background-color: #CEBFD4;
+    }
 
+/* Webdesignkategori stylet med egen farve */
+.webdesignsection {
+    background-color: #EEB6A9;
+}
 
+/*Styling af billeder i grafisk design section */
+.logopic, .strangerthings, .patronus {
+    width: 213px;
+    height: auto;
+}
 
+/*Some section stylet i egen farve*/
+.somesection {
+    background-color: #CEBFD4;
+}
 
+/*Styling af kontaktinfo-box*/
+.kontaktparagraph {
+    background-color: #EEB6A9;
+    font-family: texttype;
+    font-size: 12px;
+    margin: 19px;
+    padding: 19px;
+    margin-bottom: 15%
+}
 
+/*Kontaktsection stylet i egen farve*/
+.kontaktsection {
+    background-color: #EEB6A9;
+}
 
+/*Centering af billede: https://www.google.com/search?q=w3+schools+cener+picture&oq=w3+schools+cener+picture&aqs=chrome..69i57j0i22i30.7298j0j7&sourceid=chrome&ie=UTF-8 */
+.kontaktpicture {
+    width: 264px;
+    height: 177px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+/*Positionering af kontaktboxe*/
+.kontakttextparagraph {
+    margin-bottom: 20%
+}
 
 
 @media (min-width: 600px) {
@@ -113,6 +233,68 @@ h2, h1, .introbox p {
     max-width: 680px;
     }
 
+    /*Første box på forsiden*/
+    .box1 {
+        position: absolute;
+        top: 50px;
+        left: 500px;
+    }
+
+    /*Anden box på forsiden*/
+    .box2 {
+        position: absolute;
+        top: 150px;
+        left: 500px;
+        width: 280px;
+    }
+
+    /*Tredje box på forsiden*/
+    .box3 {
+        position: absolute;
+        top: 275px;
+        left: 500px;
+        width: 280px;
+    }
+
+    /*Positionering af collage på forside*/
+    .first-collage {
+        position: absolute;
+        top: 80px;
+        right: 500px;
+        transform: scale(1.3);
+    }
+
+    /*Placering af kategoribox*/
+    .kategoribox {
+        margin-top: 500px;
+    }
+
+    /*Størrelse på fotografisection*/
+    .fotografisection {
+        width: 60%;
+    }
+
+    /*Positionering af billede på fotografi side*/
+    .fotografisection img{
+        position: relative;
+        top: 100px;
+        right: -300px;
+        transform: scale(1.3);
+    }
+    /*Positionering af overskrift i fotografi kategori*/
+    .green-heading {
+        position: relative;
+        top: 110px;
+        left: -150px;
+    }
+
+    /*Positionering af fotografisection text*/
+    .fotografisection-text {
+        width: 640px;
+        position: relative;
+        top: -210px;
+        left: 40px;
+    }
 
 
 }
