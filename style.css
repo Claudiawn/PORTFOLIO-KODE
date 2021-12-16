@@ -87,7 +87,7 @@ h2, h1, .introbox p {
 }
 
 /*Link/knap ligger under billeder*/
-#content {
+.content {
     display: flex;
     flex-direction: column;
 }
@@ -144,6 +144,11 @@ h2, h1, .introbox p {
     margin-bottom: 10%;
     margin-left: 10%;
     margin-right: 10%
+}
+
+/*Fix af fejl (frameborder) i validering: https://stackoverflow.com/questions/26274082/the-frameborder-attribute-on-the-iframe-element-is-obsolete-use-css-instead*/
+iframe {
+    border: none;
 }
 
 /*Styling af frontbilleder i alle sections */
@@ -322,28 +327,38 @@ h2, h1, .introbox p {
         font-size: 20px;
     }
 
+    /*Forstørrelse af kontaktsection*/
     .kontaktsection {
         width: 60%;
         height: 80%; 
         padding-bottom: 50px; 
     }
 
+    /*Forstørrelse af kontaktparagraph*/
     .kontaktparagraph {
         font-size: 20px;
         line-height: 2;
         margin-bottom: 50px;
     }
 
+    /*Forstørrelse af tekst i paragraph*/
     .kontakttextparagraph {
         font-size: 20px;
     }
 
+    /*Forstørrelse af billede i kontaktsection*/
     .kontaktpicture {
         width: 600px;
         height: auto;
         margin-top: -100px;
     }
 
+    /*Styling af link til LinkedIn*/
+    /*Underline af link: https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
+    .linkedin {
+        text-decoration: underline;
+        color: #000000
+    }
 
 
 }
