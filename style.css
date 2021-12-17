@@ -219,8 +219,7 @@ iframe {
     margin-bottom: 20%
 }
 
-
-@media (min-width: 600px) {
+@media (min-width: 1600px) {
 
     /* Herunder styles logo i navbar */
     .logo {
