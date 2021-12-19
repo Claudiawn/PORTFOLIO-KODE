@@ -8,6 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 
+/*Font er hentet herfra: https://fonts.google.com/specimen/Montserrat?preview.text=montserrat&preview.text_type=custom&query=montserrat*/
 @font-face {
     font-family: texttype;
     src: url(./font/Montserrat/Montserrat-Thin.ttf)
